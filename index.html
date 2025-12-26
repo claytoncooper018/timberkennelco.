@@ -3,17 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timber Kennel Co.</title>
 
-  <!-- FAVICON (this removes the globe icon) -->
+  <!-- SEO TITLE (VERY IMPORTANT) -->
+  <title>Timber Kennel Co | Basset Hound Breeder in Texas</title>
+
+  <!-- META DESCRIPTION -->
+  <meta name="description" content="Timber Kennel Co is a family-run basset hound breeder in Texas, raising healthy, well-socialized puppies in a loving home environment.">
+
+  <!-- FAVICON -->
   <link rel="icon" type="image/jpeg" href="/favicon.jpeg">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Import slim cursive font from Google Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Extend Tailwind with custom font -->
+  <!-- Tailwind Font Config -->
   <script>
     tailwind.config = {
       theme: {
@@ -26,15 +31,20 @@
     }
   </script>
 </head>
+
 <body class="text-white font-cursive bg-cover bg-center min-h-screen" style="background-image: url('IMG_0657.jpeg');">
   <div class="bg-black bg-opacity-10 min-h-screen">
 
     <!-- Header -->
     <header class="bg-black bg-opacity-80 text-white p-6 shadow-md relative">
       <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-3xl font-bold">Timber Kennel Co.</h1>
 
-        <!-- Hamburger Icon (mobile only) -->
+        <!-- MAIN H1 -->
+        <h1 class="text-3xl font-bold">
+          Timber Kennel Co – Basset Hound Breeder
+        </h1>
+
+        <!-- Mobile Menu Icon -->
         <div class="md:hidden flex flex-col gap-1 cursor-pointer" onclick="toggleMenu()">
           <span class="block w-6 h-0.5 bg-white"></span>
           <span class="block w-6 h-0.5 bg-white"></span>
@@ -52,7 +62,7 @@
         </nav>
       </div>
 
-      <!-- Mobile Nav Menu -->
+      <!-- Mobile Nav -->
       <nav id="mobileMenu" class="md:hidden hidden px-6 pt-4 pb-2 bg-black bg-opacity-90">
         <ul class="flex flex-col gap-4 text-lg">
           <li><a href="#about" class="hover:underline">About</a></li>
@@ -63,51 +73,51 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="py-16 text-white text-center">
-      <div class="bg-black bg-opacity-0 p-8 rounded inline-block max-w-3xl mx-auto">
-        <!-- Logo -->
+    <!-- Hero -->
+    <section class="py-16 text-center">
+      <div class="p-8 max-w-3xl mx-auto">
         <img src="Timber Kennel Co (1).jpeg" alt="Timber Kennel Co Logo" class="mx-auto mb-6 max-w-xs md:max-w-sm rounded shadow-lg">
 
-        <!-- Slogan -->
         <h2 class="text-4xl font-semibold leading-snug">
-          Rooted in Family, Raised with Love—<br class="hidden sm:inline">The Basset Hound Legacy of Timber Kennel Co.
+          Rooted in Family, Raised with Love—<br class="hidden sm:inline">
+          The Basset Hound Legacy of Timber Kennel Co.
         </h2>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="py-16">
       <div class="container mx-auto max-w-3xl text-center">
         <h3 class="text-3xl font-bold mb-4">About Timber Kennel Co.</h3>
         <p class="text-lg">
-          Welcome to Timber Kennel Co., a family-run basset hound breeding program nestled in the heart of Texas. Our kennel is home to Timber, our loyal and loving sire, and our two sweet girls, Lucy and Ellie. Together, they make up the heart of our operation—and our home.
+          Welcome to <strong>Timber Kennel Co</strong>, a family-run basset hound breeding program in Texas. Our kennel is home to Timber, our loyal and loving sire, and our two sweet girls, Lucy and Ellie.
           <br><br>
-          As a big family with lots of little hands and big hearts, our puppies are raised in a warm, kid-friendly environment, making them incredibly well-socialized and ready to become part of your family. We’re passionate about breeding healthy, happy bassets with the long ears, soulful eyes, and easygoing charm the breed is known for.
-          <br><br>
-          Join the Timber Kennel Co. legacy—where quality meets compassion, and every basset hound is raised to thrive in your home and your heart. When you choose a Timber Kennel Co. pup, you’re not just getting a dog—you’re gaining a loyal companion, raised with intention, integrity, and the warmth of a true Texas family.
+          Our puppies are raised in a warm, kid-friendly environment, making them well-socialized and ready to become part of your family.
         </p>
       </div>
     </section>
 
-    <!-- Footer / Contact -->
-    <footer id="contact" class="bg-black bg-opacity-80 text-white py-10">
-      <div class="container mx-auto text-center">
-        <h4 class="text-2xl font-semibold mb-2">Contact Us</h4>
-        <p>
-          Email: <a href="mailto:destrysills@yahoo.com" class="text-blue-400 hover:underline">destrysills@yahoo.com</a> |
-          Phone: <a href="tel:+12148423653" class="text-blue-400 hover:underline">(214) 842-3653</a>
-        </p>
-      </div>
+    <!-- Footer -->
+    <footer id="contact" class="bg-black bg-opacity-80 py-10 text-center">
+      <h4 class="text-2xl font-semibold mb-2">Contact Us</h4>
+      <p>
+        Email:
+        <a href="mailto:destrysills@yahoo.com" class="text-blue-400 hover:underline">
+          destrysills@yahoo.com
+        </a>
+        |
+        Phone:
+        <a href="tel:+12148423653" class="text-blue-400 hover:underline">
+          (214) 842-3653
+        </a>
+      </p>
     </footer>
 
   </div>
 
-  <!-- Toggle Script -->
   <script>
     function toggleMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.classList.toggle("hidden");
+      document.getElementById("mobileMenu").classList.toggle("hidden");
     }
   </script>
 </body>
